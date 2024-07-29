@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.epam</groupId>
+        <artifactId>homework</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jmp.application</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <com.epam.jmp.dto.version>1.0-SNAPSHOT</com.epam.jmp.dto.version>
+        <com.epam.jmp.bank.api.version>1.0-SNAPSHOT</com.epam.jmp.bank.api.version>
+        <com.epam.jmp.cloud.bank.impl.version>1.0-SNAPSHOT</com.epam.jmp.cloud.bank.impl.version>
+        <com.epam.jmp.cloud.service.impl.version>1.0-SNAPSHOT</com.epam.jmp.cloud.service.impl.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.epam</groupId>
+            <artifactId>jmp.dto</artifactId>
+            <version>${com.epam.jmp.dto.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.epam</groupId>
+            <artifactId>jmp.bank.api</artifactId>
+            <version>${com.epam.jmp.bank.api.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.epam</groupId>
+            <artifactId>jmp.cloud.bank.impl</artifactId>
+            <version>${com.epam.jmp.cloud.bank.impl.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.epam</groupId>
+            <artifactId>jmp.cloud.service.impl</artifactId>
+            <version>${com.epam.jmp.cloud.service.impl.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
